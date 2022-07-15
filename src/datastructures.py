@@ -28,21 +28,20 @@ class FamilyStructure:
         if not hasattr(self, "_members"):
             self._members = []
 
-        self._members.append(member)    
+        return self._members.append(member)    
 
-        return
+    
 
     def delete_member(self, id):
         # fill this method and update the return
-        def delete_member(self, id):
-         for member in self._members:
+        for member in self._members:
             if member["id"] == id:
                 self._members.remove(member)
-        return 
+
         
     def get_member(self, id):
         # fill this method and update the return
-          for member in self._members:
+        for member in self._members:
             if member["id"] == id:
                 return member
                 
